@@ -1,0 +1,65 @@
+*
+  box-sizing: border-box
+  
+body 
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+
+img
+  max-width: 100%
+
+a 
+  text-decoration: none
+  outline: none
+  cursor: pointer
+
+.container 
+  width: 90%
+  max-width: 1140px
+  margin: auto
+
+.list 
+  padding: 0
+  margin: 0
+  list-style: none
+
+.section 
+  padding-top: 120px
+  padding-bottom: 120px
+
+.title 
+  font-family: 'Dosis', sans-serif
+  font-weight: 500
+  font-size: 36px
+
+.button 
+  outline: none
+  cursor: pointer
+  background: transparent
+  border: none
+
+  
+
+// HOVER ЭФФЕКТЫ 
+@media (min-width: 992px)
+  // HOVER эффекты блока HEADER 
+  .header
+    &-list 
+      &__item 
+        a 
+          &:hover
+            background-color: $light-color 
+            color: $black
+            border-radius: 17.5px
+            font-weight: 500
+
+  .hero 
+    &__button 
+      &:active 
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1)
+        font-weight: 500
+
+
+
+
+// @media (min-width: 320px)
