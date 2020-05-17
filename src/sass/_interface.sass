@@ -4,6 +4,7 @@
 body 
   font-family: 'Roboto', sans-serif
   font-size: 14px
+  color: $text-color
 
 img
   max-width: 100%
@@ -25,18 +26,27 @@ a
 
 .section 
   padding-top: 120px
-  padding-bottom: 120px
 
 .title 
   font-family: 'Dosis', sans-serif
   font-weight: 500
   font-size: 36px
+  margin: 0
+  color: $dark-text-color
+
+.subtitle 
+  font-family: 'Dosis', sans-serif
+  font-weight: 500
 
 .button 
   outline: none
   cursor: pointer
   background: transparent
   border: none
+
+.small
+  &_text 
+    font-size: 24px
 
   
 
@@ -48,8 +58,8 @@ a
       &__item 
         a 
           &:hover
-            background-color: $light-color 
-            color: $black
+            background-color: $light-text-color
+            color: $dark-text-color
             border-radius: 17.5px
             font-weight: 500
 
@@ -57,7 +67,27 @@ a
     &__button 
       &:active 
         box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1)
-        font-weight: 500
+
+  .package 
+    &-card 
+      &:hover
+        background-color: $light-text-color
+        box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1)
+        .package-card
+          &__price
+            background: linear-gradient(to right, #fd712c, #f21780)
+            color: $light-text-color
+            &:after
+              background: linear-gradient(to left bottom, transparent 50%, $light-text-color 50%) no-repeat
+            &:before
+              background: linear-gradient(to right bottom, transparent 50%, $light-text-color 50%) no-repeat
+          &__button
+            color: $light-text-color
+            background: linear-gradient(to right, #fd712c, #f21780)
+      &__button 
+        &:active 
+          box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1)
+
 
 
 

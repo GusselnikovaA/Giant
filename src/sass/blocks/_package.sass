@@ -1,0 +1,82 @@
+.package 
+  &-wrap 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 120px
+
+  &__title 
+    margin-bottom: 23px
+
+  &__subtitle 
+    max-width: 656px
+    text-align: center
+    line-height: 1.71
+    margin-bottom: 80px
+
+  &-cards 
+    display: flex
+    justify-content: space-between
+
+  &-card 
+    display: flex
+    flex-direction: column 
+    align-items: center
+    width: 262px
+    background-color: $background-color
+    margin-right: 30px
+    padding-bottom: 60px
+    &:last-child
+      margin-right: 0
+    &__title 
+      font-size: 20px
+      font-weight: normal
+      color: $dark-text-color
+    &__price 
+      font-size: 48px
+      background-color: $light-text-color
+      width: 100%
+      text-align: center
+      padding-top: 30px
+      padding-bottom: 53px
+      position: relative
+      &:after 
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        height: 40px 
+        width: 131px
+        background: linear-gradient(to left bottom, transparent 50%, $background-color 50%) no-repeat
+      &:before 
+        content: ''
+        position: absolute
+        right: 0
+        bottom: 0
+        height: 40px 
+        width: 131px
+        background: linear-gradient(to right bottom, transparent 50%, $background-color 50%) no-repeat
+    &-list 
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 80%
+      padding-top: 70px
+      &__item 
+        border-bottom: 1px dashed $border-color
+        text-align: center
+        padding: 10px 0
+        width: 100%
+        &:last-child
+          border-bottom: 0px
+          margin-bottom: 50px
+    &__label 
+      margin-bottom: 14px
+      color: $label-color
+    &__button 
+      padding: 12px 42px
+      background-color: $light-text-color
+      border-radius: 20px
+      border: 1px solid $border-color
+      font-weight: 500
