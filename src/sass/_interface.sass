@@ -50,12 +50,14 @@ a
 
 .arrows 
   &__left, &__right 
+    box-sizing: border-box
     width: 40px 
     height: 40px
     display: flex
     align-items: center
     justify-content: center
     border-radius: 50%
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1)
 
   
 
@@ -84,7 +86,7 @@ a
         box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1)
         .package-card
           &__price
-            background: linear-gradient(to right, #fd712c, #f21780)
+            background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
             color: $light-text-color
             &:after
               background: linear-gradient(to left bottom, transparent 50%, $light-text-color 50%) no-repeat
@@ -92,7 +94,7 @@ a
               background: linear-gradient(to right bottom, transparent 50%, $light-text-color 50%) no-repeat
           &__button
             color: $light-text-color
-            background: linear-gradient(to right, #fd712c, #f21780)
+            background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
       &__button 
         &:active 
           box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1)
@@ -101,11 +103,32 @@ a
     &__left, &__right 
       &:hover
         cursor: pointer
-        background: linear-gradient(to right, #fd712c, #f21780)
+        background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
         color: $light-text-color
       &:active
-        border: 3px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1)
+
+  .download
+    &-button 
+      &:hover 
+        cursor: pointer
+        .download__icon
+          background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
+          -webkit-background-clip: text
+          -moz-background-clip: text
+          background-clip: text
+          -webkit-text-fill-color: transparent
+          text-shadow: -3px 0 rgba(0, 0, 0, 0.1), 0 3px rgba(0, 0, 0, 0.1), 3px 0 rgba(0, 0, 0, 0.1), 0 -3px rgba(0, 0, 0, 0.1)
+          i
+            display: inline
+
+  .footer
+    &-social-list
+      li 
+        a
+          &:hover 
+            cursor: pointer
+            color: $main-color
 
 
 

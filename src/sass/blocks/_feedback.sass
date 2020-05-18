@@ -1,5 +1,5 @@
 .feedback
-  padding-bottom: 120px
+  padding-bottom: 90px
   &-wrap 
     position: relative
   &__title 
@@ -15,17 +15,18 @@
     margin-bottom: 80px
 
   &-slider 
-    display: flex
-    justify-content: space-between
     outline: none
     
   &-card 
     display: flex
     flex-direction: column
-    max-width: 30%
+    max-width: 360px
     background-color: $background-color
     padding: 40px
+    padding-right: 20px
     outline: none
+    margin-right: 30px
+    margin-bottom: 30px
   &__text 
     margin: 0
     margin-bottom: 29px
@@ -47,11 +48,10 @@
   &__os 
     font-weight: 300
   &__arrows
+    &_left, &_right
+      position: absolute
+      top: 65%
     &_left
-      position: absolute
-      top: 65%
-      left: -50px
+      left: -90px
     &_right
-      position: absolute
-      top: 65%
-      right: -50px
+      right: -90px

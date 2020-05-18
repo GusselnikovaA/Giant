@@ -1,9 +1,11 @@
 // слайдер в блоке отзывов (feedback) 
 $('.feedback-slider').slick({
+  centerMode: true,
+  adaptiveHeight: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   speed: 2000,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 2000,
   infinite: true,
   speed: 2000,

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&display=swap" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
 </head>
 <body>
 
@@ -134,15 +134,15 @@
     </div>
     <!-- /.section support -->
 
-    <section class="section screenshots">
+    <section class="section portfolio">
       <div class="container">
-        <div class="screenshots-wrap">
-          <h1 class="title screenshots__title">Take a look at our screenshots</h1>
-          <span class="screenshots__subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</span>
+        <div class="portfolio-wrap">
+          <h1 class="title portfolio__title">Take a look at our screenshots</h1>
+          <span class="portfolio__subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</span>
         </div>
       </div>
     </section>
-    <!-- /.section screenshots -->
+    <!-- /.section portfolio -->
 
     <section class="section package" id="package">
       <div class="container">
@@ -205,7 +205,11 @@
     <!-- /.section package -->
 
     <div class="video">
-      <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZTZPOAdxJao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src="img/video/video-poster.png" alt="video poster">
+      <div class="video-play">
+        <i class="fas fa-play"></i>
+      </div>
+      <!-- <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZTZPOAdxJao?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
     </div>
 
     <section class="section feedback">
@@ -276,12 +280,83 @@
         </div>
       </div>
     </section>
+    <!-- /.section feedback -->
+
+    <section class="section download" id="download">
+      <div class="container">
+        <h1 class="title download__title">Download Giant App Now</h1>
+        <div class="download__buttons">
+          <a href="https://apps.apple.com/ru/app/apple-store/id375380948" target="_blank">
+            <section class="download-button">
+              <div class="download__icon">
+                <i class="fab fa-apple"></i>
+              </div>
+              <div class="download-content">
+                <h2 class="title download-button__title">Download</h2>
+                <span class="download__subtitle">Download from app store</span>
+              </div>
+            </section>
+          </a>
+          <a href="https://play.google.com/store?hl=ru" target="_blank">
+            <section class="download-button">
+              <div class="download__icon">
+                <i class="fab fa-android"></i>
+              </div>
+              <div class="download-content">
+                <h2 class="title download-button__title">Download</h2>
+                <span class="download__subtitle">Download from play store</span>
+              </div>
+            </section>
+          </a>
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="_blank">
+            <section class="download-button">
+              <div class="download__icon">
+                <i class="fab fa-windows"></i>
+              </div>
+              <div class="download-content">
+                <h2 class="title download-button__title">Download</h2>
+                <span class="download__subtitle">Download from microsoft store</span>
+              </div>
+            </section>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /.section download -->
+
+    <footer class="footer">
+      <ul class="list footer-social-list">
+        <li>
+          <a href="https://telegram.im/@nastya_mariyevskaya" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://dribbble.com/" target="_blank">
+            <i class="fab fa-dribbble"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/" target="_blank">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+      </ul>
+      <span class="footer__copyright">Copyright © 2017  |  UXSEVEN - a sister concern of codepixar.com</span>
+    </footer>
+    <!-- /.footer -->
   </main>
 
   <!-- build:js js/main.min.js -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/sliders-setting.js"></script>
+    <script src="js/video-play.js"></script>
 <!-- endbuild -->
   
 </body>
