@@ -21,9 +21,9 @@
         <nav class="header-nav">
           <ul class="list header-list">
             <li class="header-list__item"><a href="#">Home</a></li>
-            <li class="header-list__item"><a href="#">Features</a></li>
-            <li class="header-list__item"><a href="#">Pricing</a></li>
-            <li class="header-list__item"><a href="#">Download Now</a></li>
+            <li class="header-list__item"><a href="#features">Features</a></li>
+            <li class="header-list__item"><a href="#package">Pricing</a></li>
+            <li class="header-list__item"><a href="#download">Download Now</a></li>
           </ul>
         </nav>
       </div>
@@ -48,7 +48,7 @@
 
   <main>
 
-    <section class="features section">
+    <section class="features section" id="features">
       <div class="container">
         <div class="features-cards">
           <div class="features__card">
@@ -110,23 +110,25 @@
     </section>
     <!-- /.features section -->
 
-    <div class="section support">
+    <div class="section support" id="support">
       <div class="container">
         <div class="support-wrap">
-          <h1 class="title support__title">We don’t leave you stranded</h1>
-          <p class="support__subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-          <p class="support__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
-          <ul class="list support-list">
-            <li class="support-list__item">
-              <i class="fas fa-check-circle"></i>
-              <span>Unlimited colors: banner with images, slider or video</span></li>
-            <li class="support-list__item">
-              <i class="fas fa-check-circle"></i>
-              <span>Fully Responsive and powered by HTML5 and CSS3</span></li>
-            <li class="support-list__item">
-              <i class="fas fa-check-circle"></i>
-              <span>Very easy to customize : set up in minutes</span></li>
-          </ul>
+          <div class="support-content">
+            <h1 class="title support__title">We don’t leave you stranded</h1>
+            <p class="support__subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
+            <p class="support__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.</p>
+            <ul class="list support-list">
+              <li class="support-list__item">
+                <i class="fas fa-check-circle"></i>
+                <span>Unlimited colors: banner with images, slider or video</span></li>
+              <li class="support-list__item">
+                <i class="fas fa-check-circle"></i>
+                <span>Fully Responsive and powered by HTML5 and CSS3</span></li>
+              <li class="support-list__item">
+               <i class="fas fa-check-circle"></i>
+                <span>Very easy to customize : set up in minutes</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -142,7 +144,7 @@
     </section>
     <!-- /.section screenshots -->
 
-    <section class="section package">
+    <section class="section package" id="package">
       <div class="container">
         <div class="package-wrap">
           <h1 class="title package__title">We've got the perfect package for you</h1>
@@ -211,11 +213,76 @@
         <div class="feedback-wrap">
           <h1 class="title feedback__title">What our customers are saying</h1>
           <span class="feedback__subtitle">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</span>
-
+          <div class="feedback-slider">
+            <div class="feedback-card">
+              <p class="feedback__text">The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.</p>
+              <div class="feedback__author">
+                <div class="feedback__photo">
+                  <img src="img/feedback/feedback_1.png" alt="feedback_author">
+                </div>
+                <div class="feedback__about">
+                  <span class="feedback__name">Alexandra Bullock</span>
+                  <span class="feedback__os">Apple Inc.</span>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <p class="feedback__text">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
+              <div class="feedback__author">
+                <div class="feedback__photo">
+                  <img src="img/feedback/feedback_2.png" alt="feedback_author">
+                </div>
+                <div class="feedback__about">
+                  <span class="feedback__name">Gary Sebastian</span>
+                  <span class="feedback__os">Apple Inc.</span>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <p class="feedback__text">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
+              <div class="feedback__author">
+                <div class="feedback__photo">
+                  <img src="img/feedback/feedback_3.png" alt="feedback_author">
+                </div>
+                <div class="feedback__about">
+                  <span class="feedback__name">Samantha Bilbau</span>
+                  <span class="feedback__os">Apple Inc.</span>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-card">
+              <p class="feedback__text">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
+              <div class="feedback__author">
+                <div class="feedback__photo">
+                  <img src="img/feedback/feedback_3.png" alt="feedback_author">
+                </div>
+                <div class="feedback__about">
+                  <span class="feedback__name">Samantha Bilbau</span>
+                  <span class="feedback__os">Apple Inc.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.feedback-slider -->
+          <div class="arrows feedback__arrows">
+            <div class="arrows__left feedback__arrows_left">
+              <i class="fas fa-long-arrow-alt-left"></i>
+            </div>
+            <div class="arrows__right feedback__arrows_right">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+          </div>
+          <!-- /.arrows -->
         </div>
       </div>
     </section>
   </main>
+
+  <!-- build:js js/main.min.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/sliders-setting.js"></script>
+<!-- endbuild -->
   
 </body>
 </html>

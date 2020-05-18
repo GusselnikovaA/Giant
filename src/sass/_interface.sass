@@ -48,6 +48,15 @@ a
   &_text 
     font-size: 24px
 
+.arrows 
+  &__left, &__right 
+    width: 40px 
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+
   
 
 // HOVER ЭФФЕКТЫ 
@@ -87,6 +96,16 @@ a
       &__button 
         &:active 
           box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1)
+
+  .arrows 
+    &__left, &__right 
+      &:hover
+        cursor: pointer
+        background: linear-gradient(to right, #fd712c, #f21780)
+        color: $light-text-color
+      &:active
+        border: 3px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%
 
 
 

@@ -1,15 +1,57 @@
 .feedback
+  padding-bottom: 120px
   &-wrap 
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-
+    position: relative
   &__title 
     margin-bottom: 23px
+    text-align: center
 
-  &__subtitle 
+  &__subtitle
+    display: block
     max-width: 656px
     text-align: center
     line-height: 1.71
+    margin: auto
     margin-bottom: 80px
+
+  &-slider 
+    display: flex
+    justify-content: space-between
+    outline: none
+    
+  &-card 
+    display: flex
+    flex-direction: column
+    max-width: 30%
+    background-color: $background-color
+    padding: 40px
+    outline: none
+  &__text 
+    margin: 0
+    margin-bottom: 29px
+    line-height: 1.71
+  &__author
+    display: flex
+    align-items: center
+  &__photo
+    margin-right: 20px
+  &__about
+    display: flex
+    flex-direction: column
+  &__name 
+    font-family: 'Dosis', sans-serif
+    font-size: 18px
+    font-weight: 500
+    color: $dark-text-color
+    margin-bottom: 11px
+  &__os 
+    font-weight: 300
+  &__arrows
+    &_left
+      position: absolute
+      top: 65%
+      left: -50px
+    &_right
+      position: absolute
+      top: 65%
+      right: -50px
