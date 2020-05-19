@@ -1,32 +1,29 @@
-//--------slider-------------
-let addrImg = [
-  'img/portfolio/Portfolio_01.png',
-  'img/portfolio/Portfolio_01.png',
-  'img/portfolio/Portfolio_01.png',
-  'img/portfolio/Portfolio_01.png',
-  'img/portfolio/Portfolio_01.png',
-  'img/portfolio/Portfolio_01.png',
-  'img/portfolio/Portfolio_01.png'
+let sliderArr = [
+  'img/portfolio/slide_01.jpg',
+  'img/portfolio/slide_02.jpg',
+  'img/portfolio/slide_03.jpg',
+  'img/portfolio/slide_04.jpg',
+  'img/portfolio/slide_05.jpg',
+  'img/portfolio/slide_06.jpg',
+  'img/portfolio/slide_07.jpg'
 ];
 
-// click on left arrow
-$('.portfolio__arrows_left, .slider-carousel__posit_1, .slider-carousel__posit_2, .slider-carousel__posit_3').on('click', function() {
+// click on right arrow
+$('.portfolio__arrows_right').on('click', function() {
+  for (let i = 0; i < sliderArr.length; i++) {
+      $('.portfolio__img_' + i).attr('src', sliderArr[i + 1]);
+  };
 
-  for (let i = 0; i < addrImg.length; i++) {
-      $('.slider-carousel__img' + i).attr('src', addrImg[i - 1]);
-  }
-
-  $('.slider-carousel__img6').attr('src', addrImg[0]);
-  addrImg.push(addrImg.shift());
+  $('.portfolio__img_6').attr('src', sliderArr[0]);
+  sliderArr.push(sliderArr.shift());
 });
 
-// click on right arrow
-$('.portfolio__arrows_right, .slider-carousel__posit_5, .slider-carousel__posit_6, .slider-carousel__posit_7').on('click', function() {
+// click on left arrow
+$('.portfolio__arrows_left').on('click', function() {
+  for (let i = 0; i < sliderArr.length; i++) {
+      $('.portfolio__img_' + i).attr('src', sliderArr[i - 1]);
+  };
 
-  for (let i = 0; i < addrImg.length; i++) {
-      $('.slider-carousel__img' + i).attr('src', addrImg[i + 1]);
-  }
-
-  $('.slider-carousel__img0').attr('src', addrImg[addrImg.length - 1]);
-  addrImg.unshift(addrImg.pop());
+  $('.portfolio__img_0').attr('src', sliderArr[sliderArr.length - 1]);
+  sliderArr.unshift(sliderArr.pop());
 });

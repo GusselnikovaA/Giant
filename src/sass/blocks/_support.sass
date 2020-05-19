@@ -1,14 +1,18 @@
 .support 
   color: $text-color
-  background: url(../img/support/iPhone.png) left center no-repeat
-  background-size: contain
   &-wrap
     display: flex
-    justify-content: flex-end
-    padding-bottom: 120px
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__img 
+    min-height: 709px
+    width: 50%
+    background: url(../img/support/iPhone.png) no-repeat
+    background-position: 60% 60%
   &-content 
     padding: 55px 0
-    max-width: 50%
+    width: 50%
   &__title
     margin-bottom: 23px
   &__subtitle 

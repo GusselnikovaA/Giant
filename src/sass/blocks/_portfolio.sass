@@ -14,45 +14,50 @@
     max-width: 656px
     text-align: center
     line-height: 1.71
+    margin: auto
     margin-bottom: 80px
 
   &-slider 
-    outline: none
     position: relative
-
-  &__item 
-    margin-bottom: 50px
+    height: 500px
     outline: none
-    box-shadow: 0 30px 40px 0 rgba(0,0,0,.1)
-    &:nth-child(1)
-      left: 0
-      z-index: 1
-      height: 280px
-    &:nth-child(2)
-      left: 6%
-      z-index: 2
-      height: 360px
-    &:nth-child(3)
-      left: 17%
-      z-index: 3
-      height: 440px
-    &:nth-child(4)
-      left: 50%
-      transform: translate(-50%, -50%)
-      z-index: 4
-      height: 500px
-    &:nth-child(5)
-      right: 17%
-      z-index: 3
-      height: 400px
-    &:nth-child(6)
-      right: 6%
-      z-index: 2
-      height: 360px
-    &:nth-child(7)
-      right: 0
-      z-index: 1
-      height: 280px
+    &__item 
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      box-shadow: 0px 30px 40px 0px rgba(0,0,0,0.1)
+      outline: none
+      &:nth-child(1)
+        left: 0
+        z-index: 1
+        height: 280px
+      &:nth-child(2)
+        left: 10%
+        z-index: 2
+        height: 360px
+      &:nth-child(3)
+        left: 21%
+        z-index: 3
+        height: 440px
+      &:nth-child(4)
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 4
+        height: 500px
+      &:nth-child(5)
+        right: 21%
+        z-index: 3
+        height: 440px
+      &:nth-child(6)
+        right: 10%
+        z-index: 2
+        height: 360px
+      &:nth-child(7)
+        right: 0
+        z-index: 1
+        height: 280px
+      img 
+        height: 100%
 
   &__arrows
     &_left, &_right
