@@ -444,12 +444,10 @@ a {
     color: #ffffff;
   }
   .package-card:hover .package-card__price:after {
-    background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, #ffffff)) no-repeat;
-    background: linear-gradient(to left bottom, transparent 50%, #ffffff 50%) no-repeat;
+    border-color: transparent transparent #ffffff transparent;
   }
   .package-card:hover .package-card__price:before {
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, #ffffff)) no-repeat;
-    background: linear-gradient(to right bottom, transparent 50%, #ffffff 50%) no-repeat;
+    border-color: transparent transparent transparent #ffffff;
   }
   .package-card:hover .package-card__button {
     color: #ffffff;
@@ -473,15 +471,12 @@ a {
   .download-button:hover {
     cursor: pointer;
   }
-  .download-button:hover .download__icon {
+  .download-button:hover .download__icon i {
     background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
     background: linear-gradient(to right, #fd712c, #f21780);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: -3px 0 rgba(0, 0, 0, 0.1), 0 3px rgba(0, 0, 0, 0.1), 3px 0 rgba(0, 0, 0, 0.1), 0 -3px rgba(0, 0, 0, 0.1);
-  }
-  .download-button:hover .download__icon i {
     display: inline;
   }
   .footer-social-list li a:hover {
@@ -901,11 +896,11 @@ a {
 
 .support {
   color: #777777;
+  background: url(../img/support/iPhone.png) left center no-repeat;
+  background-size: contain;
 }
 
 .support-wrap {
-  background: url(../img/support/iPhone_mini.png) left center no-repeat;
-  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -948,33 +943,93 @@ a {
 
 .portfolio {
   background-color: #f7fafc;
+  padding-bottom: 70px;
 }
 
 .portfolio-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
 
 .portfolio__title {
   margin-bottom: 31px;
+  text-align: center;
 }
 
 .portfolio__subtitle {
+  display: block;
   max-width: 656px;
   text-align: center;
   line-height: 1.71;
   margin-bottom: 80px;
+}
+
+.portfolio-slider {
+  outline: none;
+  position: relative;
+}
+
+.portfolio__item {
+  margin-bottom: 50px;
+  outline: none;
+  -webkit-box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__item:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  height: 280px;
+}
+
+.portfolio__item:nth-child(2) {
+  left: 6%;
+  z-index: 2;
+  height: 360px;
+}
+
+.portfolio__item:nth-child(3) {
+  left: 17%;
+  z-index: 3;
+  height: 440px;
+}
+
+.portfolio__item:nth-child(4) {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 4;
+  height: 500px;
+}
+
+.portfolio__item:nth-child(5) {
+  right: 17%;
+  z-index: 3;
+  height: 400px;
+}
+
+.portfolio__item:nth-child(6) {
+  right: 6%;
+  z-index: 2;
+  height: 360px;
+}
+
+.portfolio__item:nth-child(7) {
+  right: 0;
+  z-index: 1;
+  height: 280px;
+}
+
+.portfolio__arrows_left, .portfolio__arrows_right {
+  position: absolute;
+  top: 65%;
+}
+
+.portfolio__arrows_left {
+  left: -90px;
+}
+
+.portfolio__arrows_right {
+  right: -90px;
 }
 
 .package-wrap {
@@ -1054,8 +1109,8 @@ a {
 .package-card__price:before {
   content: '';
   position: absolute;
-  top: 80px;
-  left: -0.5px;
+  top: 81px;
+  left: -0.6px;
   border-style: solid;
   border-width: 40px 0 0 133px;
   border-color: transparent transparent transparent #f7fafc;
@@ -1063,7 +1118,7 @@ a {
 
 .package-card__price:after {
   content: '';
-  top: 80px;
+  top: 81px;
   right: -0.6px;
   position: absolute;
   border-style: solid;
@@ -1177,7 +1232,7 @@ a {
 }
 
 .feedback {
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 
 .feedback-wrap {
@@ -1216,7 +1271,7 @@ a {
   padding-right: 20px;
   outline: none;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .feedback__text {
@@ -1303,7 +1358,6 @@ a {
           align-items: center;
   width: 360px;
   background-color: #ffffff;
-  padding: 27px 33px;
   -webkit-box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.07);
           box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.07);
 }
@@ -1316,8 +1370,8 @@ a {
 }
 
 .download__icon {
-  width: 50px;
-  height: 50px;
+  width: 115px;
+  height: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1327,8 +1381,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 48px;
   color: #777777;
+  background-color: #f7fafc;
+  border-radius: 3px;
   font-size: 56px;
   text-shadow: -3px 0 rgba(0, 0, 0, 0.1), 0 3px rgba(0, 0, 0, 0.1), 3px 0 rgba(0, 0, 0, 0.1), 0 -3px rgba(0, 0, 0, 0.1);
 }
@@ -1341,6 +1396,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 28px 19px;
 }
 
 .download__subtitle {

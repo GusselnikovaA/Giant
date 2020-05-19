@@ -1,14 +1,64 @@
 .portfolio 
   background-color: $background-color
+  padding-bottom: 70px
+
   &-wrap 
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+    position: relative
+    
   &__title 
     margin-bottom: 31px
+    text-align: center
+
   &__subtitle 
+    display: block
     max-width: 656px
     text-align: center
     line-height: 1.71
     margin-bottom: 80px
+
+  &-slider 
+    outline: none
+    position: relative
+
+  &__item 
+    margin-bottom: 50px
+    outline: none
+    box-shadow: 0 30px 40px 0 rgba(0,0,0,.1)
+    &:nth-child(1)
+      left: 0
+      z-index: 1
+      height: 280px
+    &:nth-child(2)
+      left: 6%
+      z-index: 2
+      height: 360px
+    &:nth-child(3)
+      left: 17%
+      z-index: 3
+      height: 440px
+    &:nth-child(4)
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 4
+      height: 500px
+    &:nth-child(5)
+      right: 17%
+      z-index: 3
+      height: 400px
+    &:nth-child(6)
+      right: 6%
+      z-index: 2
+      height: 360px
+    &:nth-child(7)
+      right: 0
+      z-index: 1
+      height: 280px
+
+  &__arrows
+    &_left, &_right
+      position: absolute
+      top: 65%
+    &_left
+      left: -90px
+    &_right
+      right: -90px

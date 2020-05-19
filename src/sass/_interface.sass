@@ -89,9 +89,11 @@ a
             background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
             color: $light-text-color
             &:after
-              background: linear-gradient(to left bottom, transparent 50%, $light-text-color 50%) no-repeat
+              // background: linear-gradient(to left bottom, transparent 50%, $light-text-color 50%) no-repeat
+              border-color: transparent transparent $light-text-color transparent
             &:before
-              background: linear-gradient(to right bottom, transparent 50%, $light-text-color 50%) no-repeat
+              // background: linear-gradient(to right bottom, transparent 50%, $light-text-color 50%) no-repeat
+              border-color: transparent transparent transparent $light-text-color
           &__button
             color: $light-text-color
             background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
@@ -113,13 +115,12 @@ a
       &:hover 
         cursor: pointer
         .download__icon
-          background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
-          -webkit-background-clip: text
-          -moz-background-clip: text
-          background-clip: text
-          -webkit-text-fill-color: transparent
-          text-shadow: -3px 0 rgba(0, 0, 0, 0.1), 0 3px rgba(0, 0, 0, 0.1), 3px 0 rgba(0, 0, 0, 0.1), 0 -3px rgba(0, 0, 0, 0.1)
           i
+            background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            background-clip: text
+            -webkit-text-fill-color: transparent
             display: inline
 
   .footer
