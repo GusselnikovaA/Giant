@@ -5,7 +5,7 @@ Landing page Giant
 ```sh
 $ git clone https://github.com/GusselnikovaA/Giant.git
 $ npm i 
-$ open index.html
+then open index.html
 ```
 
 ###  Скрипты package.json:
