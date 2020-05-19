@@ -23,3 +23,67 @@
     position: absolute
     top: 219px
     width: 500px
+  &-burger 
+    display: none
+    outline: none
+    background-color: transparent 
+    border: none
+    &__line 
+      width: 30px 
+      height: 3px 
+      background-color: #fff
+      position: relative
+      &:before, &:after
+        position: absolute 
+        left: 0
+        content: ''
+        display: block
+        width: 30px 
+        height: 3px 
+        background-color: #fff
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+      &:before 
+        top: -10px
+      &:after
+        top: 10px
+      &_active
+        background-color: transparent
+        &:before 
+          transform: rotate(45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+        &:after
+          transform: rotate(-45deg)
+          top: 0
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+@media (max-width: 1300px)
+  .header
+    height: 700px
+    &-hero 
+      top: 150px
+
+@media (max-width: 1200px)
+  .header
+    background: url(../img/header/iPhones_500px.png), linear-gradient(to right, $gradient-color-1, $gradient-color-2)
+    background-repeat: no-repeat
+    background-position: bottom right
+
+@media (max-width: 952px)
+  .header 
+    height: 650px
+    background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
+    &-hero
+      left: 10%
+      margin: auto
+      width: 80%
+
+@media (max-width: 620px)
+  .header 
+    height: 580px
+    &-list
+      display: none
+    &-burger 
+      display: flex
+    &-hero 
+      top: 130px

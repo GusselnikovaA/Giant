@@ -20,3 +20,38 @@
     background-color: $light-text-color
     border-radius: 20px
     font-weight: 500
+
+@media (max-width: 1300px)
+  .hero
+    &__subtitle
+      max-width: 340px
+
+@media (max-width: 952px)
+  .hero 
+    display: flex
+    flex-direction: column 
+    justify-content: center
+    align-items: center
+    &__title 
+      text-align: center
+      margin-bottom: 30px
+    &__subtitle
+      max-width: 500px
+      text-align: center
+      margin-bottom: 30px
+
+@media (max-width: 620px)
+  .hero 
+    &__title 
+      font-size: 36px
+    &-list
+      &__item
+        display: flex
+        margin-bottom: 10px
+        span 
+          padding-left: 10px
+
+@media (max-width: 360px)
+  .hero 
+    &__title 
+      font-size: 24px

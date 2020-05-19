@@ -1,15 +1,15 @@
 .support 
   color: $text-color
+  padding-bottom: 20px
   &-wrap
     display: flex
     justify-content: space-between
     align-items: center
-    flex-wrap: wrap
   &__img 
     min-height: 709px
     width: 50%
     background: url(../img/support/iPhone.png) no-repeat
-    background-position: 60% 60%
+    background-position: 55% 60%
   &-content 
     padding: 55px 0
     width: 50%
@@ -28,4 +28,49 @@
         padding-left: 20px
       i 
         color: $dark-text-color
+
+@media (max-width: 1150px)
+  .support 
+    &__img 
+      min-height: 600px
+      width: 40%
+      background-position: 45% 60%
+      background-size: cover
+
+@media (max-width: 952px)
+  .support 
+    padding-top: 30px
+    &-wrap
+      flex-direction: column
+    &__img 
+      width: 100%
+      min-height: 300px
+    &-content
+      order: -1
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 15px 0
+    &__title 
+      text-align: center
+    &__subtitle 
+      text-align: center
+      margin-bottom: 30px
+    &__text 
+      text-align: center
+
+@media (max-width: 620px)
+  .support
+    &__subtitle 
+      margin-bottom: 10px
+    &-list
+      width: 300px
+      &__item
+        display: flex
+        margin-bottom: 10px
+        span 
+          padding-left: 10px
+    
   

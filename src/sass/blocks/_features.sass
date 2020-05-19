@@ -1,8 +1,9 @@
 .features
   &-cards 
     display: flex
+    justify-content: space-between
     flex-wrap: wrap
-    padding-bottom: 118px
+    padding-bottom: 60px
     border-bottom: 2px solid $border-color
   &__card 
     display: flex
@@ -19,7 +20,33 @@
   &__subtitle 
     font-size: 24px
     color: $dark-text-color
+    margin-top: 0
+    margin-bottom: 20px
   &__text 
     font-weight: 300
     color: $text-color
     margin: 0
+    line-height: 1.71
+
+@media (max-width: 1300px)
+  .features
+    &__card 
+      width: 45%
+
+@media (max-width: 952px)
+  .features
+    &-cards 
+      justify-content: center
+      padding-bottom: 80px
+    &__card 
+      width: 75%
+      &:last-child 
+        margin-bottom: 0
+
+@media (max-width: 620px)
+  .features
+    &__card 
+      width: 100%
+    &__icon 
+      padding: 20px
+      font-size: 18px

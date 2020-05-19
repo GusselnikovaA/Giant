@@ -15,7 +15,7 @@ a
   cursor: pointer
 
 .container 
-  width: 90%
+  width: 85%
   max-width: 1140px
   margin: auto
 
@@ -89,10 +89,8 @@ a
             background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
             color: $light-text-color
             &:after
-              // background: linear-gradient(to left bottom, transparent 50%, $light-text-color 50%) no-repeat
               border-color: transparent transparent $light-text-color transparent
             &:before
-              // background: linear-gradient(to right bottom, transparent 50%, $light-text-color 50%) no-repeat
               border-color: transparent transparent transparent $light-text-color
           &__button
             color: $light-text-color
@@ -130,8 +128,16 @@ a
             cursor: pointer
             color: $main-color
 
+@media (max-width: 1300px)
+  .container
+    max-width: 1000px
 
+@media (max-width: 952px)
+  .section 
+    padding-top: 80px
 
-
-
-// @media (min-width: 320px)
+@media (max-width: 620px)
+  .container
+    width: 90%
+  .section
+    padding-top: 50px

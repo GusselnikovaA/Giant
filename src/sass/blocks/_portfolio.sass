@@ -1,6 +1,6 @@
 .portfolio 
   background-color: $background-color
-  padding-bottom: 70px
+  padding-bottom: 120px
 
   &-wrap 
     position: relative
@@ -67,3 +67,92 @@
       left: -90px
     &_right
       right: -90px
+
+@media (max-width: 1300px)
+  .portfolio 
+    &__arrows 
+      &_left
+        left: -60px
+      &_right
+        right: -60px
+
+@media (max-width: 952px)
+  .portfolio 
+    padding-bottom: 80px
+    &__subtitle 
+      margin-bottom: 50px
+    &-slider 
+      height: 400px
+      &__item 
+        &:nth-child(1)
+          height: 180px
+        &:nth-child(2)
+          height: 260px
+        &:nth-child(3)
+          height: 340px
+        &:nth-child(4)
+          height: 400px
+        &:nth-child(5)
+          height: 340px
+        &:nth-child(6)
+          height: 260px
+        &:nth-child(7)
+          height: 180px
+    &__arrows 
+      &_left, &_right
+        background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
+        color: $light-text-color
+      &_left
+        left: -50px
+      &_right
+        right: -50px
+
+@media (max-width: 620px)
+  .portfolio 
+    padding-bottom: 0
+    &__subtitle 
+      margin-bottom: 30px
+    &-wrap 
+      padding-bottom: 100px
+    &-slider 
+      height: 300px
+      &__item 
+        &:nth-child(1)
+          height: 80px
+        &:nth-child(2)
+          left: 6%
+          height: 160px
+        &:nth-child(3)
+          left: 15%
+          height: 240px
+        &:nth-child(4)
+          height: 300px
+        &:nth-child(5)
+          right: 15%
+          height: 240px
+        &:nth-child(6)
+          right: 6%
+          height: 160px
+        &:nth-child(7)
+          height: 80px
+    &__arrows
+      &_left
+        z-index: 1000
+        top: auto
+        left: 120px
+        bottom: 30px
+      &_right
+        right: 120px
+        top: auto
+        bottom: 30px
+        z-index: 1000
+
+@media (max-width: 360px)
+  .portfolio 
+    &__arrows
+      &_left
+        left: 90px
+      &_right
+        right: 90px
+
+
