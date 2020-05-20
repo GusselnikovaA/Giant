@@ -478,13 +478,6 @@ a {
   .download-button:hover .download__svg {
     fill: url(#gradient);
   }
-  .download-button:hover .download__icon i {
-    background: -webkit-gradient(linear, left top, right top, from(#fd712c), to(#f21780));
-    background: linear-gradient(to right, #fd712c, #f21780);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   .footer-social-list li a:hover {
     cursor: pointer;
     color: #f31f79;
@@ -1964,10 +1957,6 @@ a {
 @media (max-width: 1300px) {
   .download-button {
     width: 320px;
-  }
-  .download__icon {
-    width: 80px;
-    height: 80px;
   }
   .download-content {
     padding: 18px 18px;
