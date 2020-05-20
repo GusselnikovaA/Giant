@@ -62,8 +62,6 @@ a
     border-radius: 50%
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1)
 
-  
-
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
   // HOVER эффекты блока HEADER 
@@ -115,13 +113,15 @@ a
     &-button 
       &:hover 
         cursor: pointer
-        .download__icon
-          i
-            background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
-            -webkit-background-clip: text
-            -moz-background-clip: text
-            background-clip: text
-            -webkit-text-fill-color: transparent
+        .download__svg
+          fill: url(#gradient)
+        // .download__icon
+        //   i
+        //     background: linear-gradient(to right, $gradient-color-1, $gradient-color-2)
+        //     -webkit-background-clip: text
+        //     -moz-background-clip: text
+        //     background-clip: text
+        //     -webkit-text-fill-color: transparent
 
   .footer
     &-social-list
